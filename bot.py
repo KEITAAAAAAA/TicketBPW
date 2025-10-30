@@ -263,8 +263,8 @@ async def createpanel(ctx):
         title="🎟️ Ticket Center / Centre de Tickets",
         description=(
             "Welcome to the ticket system! / Bienvenue sur le système de tickets\n\n"
-            "💰 Buy coins / Acheter coins – 1 coin = 1 €\n"
-            "💸 Sell coins / Vendre coins – 1 coin = 0,90 €\n"
+            "💰 Buy coins / Acheter coins – 1 coin = 0,85 €\n"
+            "💸 Sell coins / Vendre coins – 1 coin = 0,70 €\n"
             "❓ Support / Questions – For any help / Pour toute aide\n"
             "🛡️ Become Staff / Devenir Staff – Apply to become staff / Postulez pour devenir staff\n\n"
             "Choose the ticket type in the menu below / Choisissez le type de ticket ci-dessous 👇"
@@ -327,3 +327,4 @@ async def on_ready():
 import os
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
