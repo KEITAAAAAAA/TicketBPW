@@ -224,7 +224,7 @@ async def sell(ctx):
         title="💸 Sell Steps / Étapes Vente",
         description=(
             f"User: {member.mention}\n"
-            f"Amount: {coins} coins (~{coins*0.7:.2f} €)\n\n"
+            f"Amount: {coins} coins (~{coins*0.76:.2f} €)\n\n"
             "1️⃣ Staff gives BPW username\n"
             "2️⃣ User sends the coins\n"
             "3️⃣ Staff confirms receipt\n"
@@ -264,7 +264,7 @@ async def createpanel(ctx):
         description=(
             "Welcome to the ticket system! / Bienvenue sur le système de tickets\n\n"
             "💰 Buy coins / Acheter coins – 1 coin = 0,85 €\n"
-            "💸 Sell coins / Vendre coins – 1 coin = 0,70 €\n"
+            "💸 Sell coins / Vendre coins – 1 coin = 0,76 €\n"
             "❓ Support / Questions – For any help / Pour toute aide\n"
             "🛡️ Become Staff / Devenir Staff – Apply to become staff / Postulez pour devenir staff\n\n"
             "Choose the ticket type in the menu below / Choisissez le type de ticket ci-dessous 👇"
@@ -327,5 +327,6 @@ async def on_ready():
 import os
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
 
 
