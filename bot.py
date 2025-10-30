@@ -1,3 +1,5 @@
+import sys
+sys.stdout.flush()
 import discord
 from discord.ext import commands
 from discord.ui import View, Button, Select, Modal, TextInput
@@ -319,7 +321,9 @@ class TicketSelectMenu(Select):
 
 @bot.event
 async def on_ready():
-    print(f"✅ Bot connected / Connecté en tant que {bot.user}")
+    print(f"✅ Bot connecté / Connecté en tant que {bot.user}")
+    sys.stdout.flush()
 
 import os
+
 bot.run(os.getenv("DISCORD_TOKEN"))
