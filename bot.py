@@ -180,7 +180,7 @@ async def buy(ctx):
         title="💰 Buy Steps / Étapes Achat",
         description=(
             f"User: {member.mention}\n"
-            f"Amount: {coins} coins (~{coins*1:.2f} €)\n\n"
+            f"Amount: {coins} coins (~{coins*0.85:.2f} €)\n\n"
             "1️⃣ Send the amount to PayPal\n"
             "2️⃣ Notify staff with screenshot\n"
             "3️⃣ Send your BPW username\n"
@@ -224,7 +224,7 @@ async def sell(ctx):
         title="💸 Sell Steps / Étapes Vente",
         description=(
             f"User: {member.mention}\n"
-            f"Amount: {coins} coins (~{coins*0.9:.2f} €)\n\n"
+            f"Amount: {coins} coins (~{coins*0.7:.2f} €)\n\n"
             "1️⃣ Staff gives BPW username\n"
             "2️⃣ User sends the coins\n"
             "3️⃣ Staff confirms receipt\n"
@@ -327,4 +327,5 @@ async def on_ready():
 import os
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
 
